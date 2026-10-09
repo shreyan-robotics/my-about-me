@@ -13,6 +13,21 @@
 .box {
     width: 100px;
     height: 100px;
-    /* shorthand format: name | duration | timing-function | iteration-count | direction */
-    animation: slideRight 2s ease-in-out infinite alternate;
+    margin-top: 50px;
+    border-radius: 8px;
+    
+    /* 1. Name of your @keyframes rule */
+    animation-name: slideRight; 
+    
+    /* 2. How long the animation takes to complete */
+    animation-duration: 2s; 
+    
+    /* 3. Make the animation repeat forever (optional) */
+    animation-iteration-count: infinite; 
+    
+    /* 4. Alternate direction back and forth (optional) */
+    animation-direction: alternate; 
+    
+    /* 5. Smooth pacing (optional) */
+    animation-timing-function: ease-in-out; 
 }
