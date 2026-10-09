@@ -1,0 +1,18 @@
+/* Create the timeline of the animation */
+@keyframes slideRight {
+    from {
+        transform: translateX(0); /* Starting position */
+        background-color: #ff4757;
+    }
+    to {
+        transform: translateX(300px); /* Ending position 300px to the right */
+        background-color: #2ed573;
+    }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    /* shorthand format: name | duration | timing-function | iteration-count | direction */
+    animation: slideRight 2s ease-in-out infinite alternate;
+}
